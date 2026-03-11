@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Simecab Evolución Tecnológica — Maximizamos tu eficiencia mediante la convergencia de infraestructura crítica en telecomunicaciones, automatización de procesos y desarrollo de ecosistemas digitales a medida.">
+    <meta name="keywords"
+        content="telecomunicaciones, automatización, desarrollo de software, IoT, cloud, tecnología, Venezuela">
+    <meta property="og:title" content="Simecab Evolución Tecnológica">
+    <meta property="og:description"
+        content="Conectamos tu mundo: expertos en telecomunicaciones, automatización inteligente y desarrollo de aplicaciones de vanguardia.">
+    <title>Simecab Evolución Tecnológica | Telecomunicaciones · Automatización · Software</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ============================================================
+         PARTICLES BACKGROUND
+    ============================================================ -->
+    <div id="particles-container" class="particles-container"></div>
+
+    <!-- ============================================================
+         NAVBAR
+    ============================================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="nav-logo">
+                <img src="images/logo.png" alt="Simecab Logo" class="logo-img">
+                <span class="logo-text">Simecab</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio" class="nav-link active" id="link-inicio">Inicio</a></li>
+                <li><a href="#servicios" class="nav-link" id="link-servicios">Servicios</a></li>
+                <li><a href="#soluciones" class="nav-link" id="link-soluciones">Soluciones</a></li>
+                <li><a href="#nosotros" class="nav-link" id="link-nosotros">Nosotros</a></li>
+                <li><a href="#testimonios" class="nav-link" id="link-testimonios">Clientes</a></li>
+                <li><a href="#contacto" class="nav-link" id="link-contacto">Contacto</a></li>
+            </ul>
+
+            <a href="#contacto" class="btn-primary btn-sm nav-cta" id="nav-cta-btn">Hablemos</a>
+
+            <button class="mobile-menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#inicio" class="mobile-link" id="mob-inicio">Inicio</a></li>
+                <li><a href="#servicios" class="mobile-link" id="mob-servicios">Servicios</a></li>
+                <li><a href="#soluciones" class="mobile-link" id="mob-soluciones">Soluciones</a></li>
+                <li><a href="#nosotros" class="mobile-link" id="mob-nosotros">Nosotros</a></li>
+                <li><a href="#testimonios" class="mobile-link" id="mob-testimonios">Clientes</a></li>
+                <li><a href="#contacto" class="mobile-link" id="mob-contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+         HERO SECTION
+    ============================================================ -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg-glow"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge" id="hero-badge">
+                    <span class="badge-dot"></span>
+                    ⚡ Evolución Tecnológica en Tiempo Real
+                </div>
+
+                <h1 class="hero-title" id="hero-title">
+                    Conectamos<br>
+                    <span class="gradient-text">tu mundo</span><br>
+                    tecnológico
+                </h1>
+
+                <p class="hero-subtitle" id="hero-subtitle">
+                    Maximizamos tu eficiencia mediante la convergencia de infraestructura crítica en
+                    <strong>telecomunicaciones</strong>, <strong>automatización de procesos (n8n, RPA)</strong>
+                    y desarrollo de <strong>ecosistemas digitales</strong> a medida.
+                </p>
+
+                <div class="hero-pills" id="hero-pills">
+                    <span class="pill">📡 Telecomunicaciones</span>
+                    <span class="pill">🤖 Automatización</span>
+                    <span class="pill">💻 Software a Medida</span>
+                </div>
+
+                <div class="hero-buttons" id="hero-buttons">
+                    <a href="#servicios" class="btn-primary btn-lg" id="hero-cta-primary">
+                        Explorar Servicios
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                    <a href="#contacto" class="btn-outline btn-lg" id="hero-cta-secondary">
+                        Solicitar Demo
+                    </a>
+                </div>
+
+                <div class="hero-metrics" id="hero-metrics">
+                    <div class="metric">
+                        <span class="metric-value counter" data-target="150">0</span><span
+                            class="metric-suffix">+</span>
+                        <span class="metric-label">Proyectos Exitosos</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric">
+                        <span class="metric-value counter" data-target="98">0</span><span class="metric-suffix">%</span>
+                        <span class="metric-label">Satisfacción Cliente</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric">
+                        <span class="metric-value counter" data-target="10">0</span><span class="metric-suffix">+</span>
+                        <span class="metric-label">Años de Experiencia</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual" id="hero-visual-wrap">
+                <div class="hero-image-wrapper">
+                    <div class="hero-glow-ring"></div>
+                    <img src="images/hero_visual.png" alt="Ecosistema tecnológico Simecab" class="hero-img floating"
+                        id="hero-img">
+                    <div class="hero-orbit hero-orbit-1"></div>
+                    <div class="hero-orbit hero-orbit-2"></div>
+                    <!-- Floating data cards -->
+                    <div class="hero-data-card card-1">
+                        <div class="data-icon">📡</div>
+                        <div class="data-info">
+                            <span class="data-title">Uptime Red</span>
+                            <span class="data-value" style="color: var(--primary-400)">99.9%</span>
+                        </div>
+                    </div>
+                    <div class="hero-data-card card-2">
+                        <div class="data-icon">⚙️</div>
+                        <div class="data-info">
+                            <span class="data-title">Procesos Auto.</span>
+                            <span class="data-value" style="color: var(--primary-400)">+340%</span>
+                        </div>
+                    </div>
+                    <div class="hero-data-card card-3">
+                        <div class="data-icon">🚀</div>
+                        <div class="data-info">
+                            <span class="data-title">Deploy Speed</span>
+                            <span class="data-value" style="color: var(--primary-400)">3x</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" id="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         SOCIAL PROOF / TECH STACK
+    ============================================================ -->
+    <section class="social-proof" id="tech-stack">
+        <div class="container">
+            <p class="proof-label">Tecnologías y plataformas que dominamos</p>
+            <div class="proof-logos">
+                <div class="proof-logo" id="tech-cisco">
+                    <span class="tech-badge">🔵 Cisco</span>
+                </div>
+                <div class="proof-logo" id="tech-aws">
+                    <span class="tech-badge">☁️ AWS</span>
+                </div>
+                <div class="proof-logo" id="tech-azure">
+                    <span class="tech-badge">🔷 Azure</span>
+                </div>
+                <div class="proof-logo" id="tech-python">
+                    <span class="tech-badge">🐍 Python</span>
+                </div>
+                <div class="proof-logo" id="tech-node">
+                    <span class="tech-badge">⬡ Node.js</span>
+                </div>
+                <div class="proof-logo" id="tech-react">
+                    <span class="tech-badge">⚛️ React</span>
+                </div>
+                <div class="proof-logo" id="tech-docker">
+                    <span class="tech-badge">🐳 Docker</span>
+                </div>
+                <div class="proof-logo" id="tech-ubiquiti">
+                    <span class="tech-badge">📶 Ubiquiti</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         WHITE SECTION: PILARES CLAVE
+    ============================================================ -->
+    <section class="pillars-section white-section" id="pilares">
+        <div class="container">
+            <div class="section-header dark-header">
+                <div class="section-badge-dark">🏆 Nuestros Pilares</div>
+                <h2 class="section-title dark-title">La <span class="gradient-text-green">trifecta</span> que impulsa tu
+                    negocio</h2>
+                <p class="section-subtitle dark-subtitle">Tres áreas de especialización que, en sinergia, transforman
+                    completamente la infraestructura y operación de tu empresa.</p>
+            </div>
+            <div class="pillars-grid">
+                <div class="pillar-card" id="pillar-telco">
+                    <div class="pillar-icon-wrap green">
+                        <span class="pillar-icon">📡</span>
+                    </div>
+                    <h3>Telecomunicaciones</h3>
+                    <p>Diseño, implementación y mantenimiento de infraestructura de redes críticas con tecnología de
+                        última generación.</p>
+                    <div class="pillar-tags">
+                        <span>Fibra Óptica</span><span>FTTH/FTTB</span><span>Mikrotik</span><span>Ubiquiti</span>
+                    </div>
+                </div>
+                <div class="pillar-card featured-pillar" id="pillar-auto">
+                    <div class="pillar-badge-top">MÁS SOLICITADO</div>
+                    <div class="pillar-icon-wrap green">
+                        <span class="pillar-icon">🤖</span>
+                    </div>
+                    <h3>Automatización</h3>
+                    <p>Transformamos procesos manuales en flujos inteligentes con integraciones n8n que operan 24/7,
+                        reduciendo costos hasta un 70%.</p>
+                    <div class="pillar-tags">
+                        <span>n8n</span><span>RPA</span><span>IA/ML</span><span>IoT</span><span>SCADA</span>
+                    </div>
+                </div>
+                <div class="pillar-card" id="pillar-dev">
+                    <div class="pillar-icon-wrap green">
+                        <span class="pillar-icon">💻</span>
+                    </div>
+                    <h3>Desarrollo de Software</h3>
+                    <p>Ecosistemas digitales a medida que se adaptan perfectamente a tu industria, escalan contigo y
+                        evolucionan sin límites.</p>
+                    <div class="pillar-tags">
+                        <span>Web Apps</span><span>APIs REST</span><span>Mobile</span><span>SaaS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         SERVICES SECTION — FLIP CARDS
+    ============================================================ -->
+    <section class="services-section" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">🔧 Nuestros Servicios</div>
+                <h2 class="section-title">Todo lo que necesitas<br><span class="gradient-text">en un solo partner</span>
+                </h2>
+                <p class="section-subtitle">Cada solución es diseñada específicamente para tu empresa. Sin plantillas
+                    genéricas, sin compromisos a medias.</p>
+            </div>
+
+            <div class="services-grid">
+
+                <!-- Service 1: Telecomunicaciones -->
+                <div class="service-card-flip reveal-item" id="service-telco">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/service_1.png" alt="Telecomunicaciones e Infraestructura de Redes"
+                                class="service-image">
+                            <div class="service-overlay">
+                                <div class="service-icon-front">📡</div>
+                                <h3 class="service-title-front">Telecomunicaciones</h3>
+                                <p class="service-hint">Hover para más info</p>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <div class="service-back-icon">📡</div>
+                            <h3 class="service-title-back">Telecomunicaciones e Infraestructura</h3>
+                            <p class="service-description">Diseñamos e implementamos redes de telecomunicaciones
+                                robustas y escalables. Desde FTTH hasta backbone empresarial.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Fibra Óptica</span>
+                                <span class="feature-tag">FTTH/FTTB</span>
+                                <span class="feature-tag">Mikrotik</span>
+                                <span class="feature-tag">Ubiquiti</span>
+                                <span class="feature-tag">VoIP</span>
+                            </div>
+                            <a href="#contacto" class="btn-service">Consultar →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: Automatización -->
+                <div class="service-card-flip reveal-item" id="service-automation">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/service_2.png" alt="Automatización de Procesos" class="service-image">
+                            <div class="service-overlay">
+                                <div class="service-icon-front">🤖</div>
+                                <h3 class="service-title-front">Automatización</h3>
+                                <p class="service-hint">Hover para más info</p>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <div class="service-back-icon">🤖</div>
+                            <h3 class="service-title-back">Automatización de Procesos</h3>
+                            <p class="service-description">Implementamos flujos en n8n, RPA, IA y sistemas SCADA para
+                                transformar operaciones manuales en ecosistemas autónomos.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">n8n</span>
+                                <span class="feature-tag">RPA</span>
+                                <span class="feature-tag">SCADA</span>
+                                <span class="feature-tag">Industria 4.0</span>
+                                <span class="feature-tag">PLC</span>
+                                <span class="feature-tag">IA/ML</span>
+                            </div>
+                            <a href="#contacto" class="btn-service">Consultar →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: Software a Medida -->
+                <div class="service-card-flip reveal-item" id="service-software">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/service_3.png" alt="Desarrollo de Software a Medida" class="service-image">
+                            <div class="service-overlay">
+                                <div class="service-icon-front">💻</div>
+                                <h3 class="service-title-front">Software a Medida</h3>
+                                <p class="service-hint">Hover para más info</p>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <div class="service-back-icon">💻</div>
+                            <h3 class="service-title-back">Desarrollo de Software a Medida</h3>
+                            <p class="service-description">Construimos aplicaciones web, móviles y APIs enterprise que
+                                se adaptan al 100% a tus procesos de negocio.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Web Apps</span>
+                                <span class="feature-tag">React / Vue</span>
+                                <span class="feature-tag">Node / Python</span>
+                                <span class="feature-tag">APIs REST</span>
+                                <span class="feature-tag">Mobile</span>
+                            </div>
+                            <a href="#contacto" class="btn-service">Consultar →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4: IoT -->
+                <div class="service-card-flip reveal-item" id="service-iot">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/service_4.png" alt="IoT y Conectividad Inteligente" class="service-image">
+                            <div class="service-overlay">
+                                <div class="service-icon-front">🌐</div>
+                                <h3 class="service-title-front">IoT & Conectividad</h3>
+                                <p class="service-hint">Hover para más info</p>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <div class="service-back-icon">🌐</div>
+                            <h3 class="service-title-back">IoT & Conectividad Inteligente</h3>
+                            <p class="service-description">Conectamos dispositivos, sensores y sistemas en ecosistemas
+                                inteligentes que recopilan, procesan y actúan sobre datos en tiempo real.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Sensores IoT</span>
+                                <span class="feature-tag">MQTT</span>
+                                <span class="feature-tag">Edge Computing</span>
+                                <span class="feature-tag">Smart City</span>
+                                <span class="feature-tag">LoRaWAN</span>
+                            </div>
+                            <a href="#contacto" class="btn-service">Consultar →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5: Cloud & DevOps (CSS Art) -->
+                <div class="service-card-flip reveal-item" id="service-cloud">
+                    <div class="service-card-inner">
+                        <div class="service-card-front service-front-css">
+                            <div class="css-art-bg cloud-art">
+                                <div class="cloud-node n1"></div>
+                                <div class="cloud-node n2"></div>
+                                <div class="cloud-node n3"></div>
+                                <div class="cloud-node n4"></div>
+                                <div class="cloud-line l1"></div>
+                                <div class="cloud-line l2"></div>
+                                <div class="cloud-line l3"></div>
+                                <div class="cloud-hex h1">☁️</div>
+                                <div class="cloud-hex h2">⚙️</div>
+                                <div class="cloud-hex h3">🔄</div>
+                            </div>
+                            <div class="service-overlay">
+                                <div class="service-icon-front">☁️</div>
+                                <h3 class="service-title-front">Cloud & DevOps</h3>
+                                <p class="service-hint">Hover para más info</p>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <div class="service-back-icon">☁️</div>
+                            <h3 class="service-title-back">Cloud & DevOps</h3>
+                            <p class="service-description">Migramos, optimizamos y gestionamos tu infraestructura en la
+                                nube con pipelines CI/CD y prácticas DevOps modernas.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">AWS / Azure</span>
+                                <span class="feature-tag">Docker</span>
+                                <span class="feature-tag">Kubernetes</span>
+                                <span class="feature-tag">CI/CD</span>
+                                <span class="feature-tag">Terraform</span>
+                            </div>
+                            <a href="#contacto" class="btn-service">Consultar →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6: Consultoría Tech (CSS Art) -->
+                <div class="service-card-flip reveal-item" id="service-consulting">
+                    <div class="service-card-inner">
+                        <div class="service-card-front service-front-css">
+                            <div class="css-art-bg consult-art">
+                                <div class="consult-ring r1"></div>
+                                <div class="consult-ring r2"></div>
+                                <div class="consult-ring r3"></div>
+                                <div class="consult-dot d1"></div>
+                                <div class="consult-dot d2"></div>
+                                <div class="consult-dot d3"></div>
+                                <div class="consult-dot d4"></div>
+                                <div class="consult-icon">🎯</div>
+                            </div>
+                            <div class="service-overlay">
+                                <div class="service-icon-front">🎯</div>
+                                <h3 class="service-title-front">Consultoría Tech</h3>
+                                <p class="service-hint">Hover para más info</p>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <div class="service-back-icon">🎯</div>
+                            <h3 class="service-title-back">Consultoría Tecnológica</h3>
+                            <p class="service-description">Auditorías de infraestructura, hojas de ruta tecnológicas y
+                                estrategia digital para que tomes decisiones con datos, no intuición.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Auditoría IT</span>
+                                <span class="feature-tag">Roadmap Tech</span>
+                                <span class="feature-tag">Transformación Digital</span>
+                                <span class="feature-tag">CTO As Service</span>
+                            </div>
+                            <a href="#contacto" class="btn-service">Consultar →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         WHITE SECTION: SOLUCIONES / DASHBOARD PREVIEW
+    ============================================================ -->
+    <section class="solutions-section white-section" id="soluciones">
+        <div class="container">
+            <div class="solutions-grid">
+                <div class="solutions-content">
+                    <div class="section-badge-dark">💡 Nuestro Diferencial</div>
+                    <h2 class="dark-title"
+                        style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin: 1.5rem 0;">
+                        No somos un proveedor.<br>
+                        <span class="gradient-text-green">Somos tu equipo tech.</span>
+                    </h2>
+                    <p class="dark-subtitle" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+                        Actuamos como extensión de tu empresa. Entendemos tu industria, tus dolores y tus metas antes de
+                        escribir una línea de código o tender un cable.
+                    </p>
+
+                    <div class="feature-list">
+                        <div class="feature-item" id="feat-1">
+                            <div class="feature-check">✓</div>
+                            <div>
+                                <strong>Diagnóstico sin costo</strong>
+                                <p>Evaluamos tu infraestructura actual y te damos un informe detallado completamente
+                                    gratis.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item" id="feat-2">
+                            <div class="feature-check">✓</div>
+                            <div>
+                                <strong>Soluciones convergentes</strong>
+                                <p>Integramos telecomunicaciones, automatización y software en una sola propuesta
+                                    coherente.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item" id="feat-3">
+                            <div class="feature-check">✓</div>
+                            <div>
+                                <strong>Soporte 24/7</strong>
+                                <p>Tu infraestructura no duerme. Nuestro equipo de soporte tampoco.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item" id="feat-4">
+                            <div class="feature-check">✓</div>
+                            <div>
+                                <strong>Garantía de resultados</strong>
+                                <p>Métricas claras desde el día 1. Sabrás exactamente qué esperar y cuándo verlo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contacto" class="btn-primary-green" id="solutions-cta">Solicitar diagnóstico gratuito
+                        →</a>
+                </div>
+
+                <!-- Dashboard Mock -->
+                <div class="dashboard-mock" id="dashboard-mock">
+                    <div class="mock-header">
+                        <div class="mock-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green-dot"></span>
+                        </div>
+                        <span class="mock-title">Simecab Dashboard v2.0</span>
+                    </div>
+                    <div class="mock-body">
+                        <div class="mock-sidebar">
+                            <div class="sidebar-item active">📊 Overview</div>
+                            <div class="sidebar-item">📡 Redes</div>
+                            <div class="sidebar-item">🤖 Automatización</div>
+                            <div class="sidebar-item">💻 Apps</div>
+                            <div class="sidebar-item">⚙️ Config</div>
+                        </div>
+                        <div class="mock-main">
+                            <div class="mock-cards-row">
+                                <div class="mock-stat-card">
+                                    <span class="mock-stat-label">Uptime</span>
+                                    <span class="mock-stat-value green-val">99.9%</span>
+                                </div>
+                                <div class="mock-stat-card">
+                                    <span class="mock-stat-label">Automatizados</span>
+                                    <span class="mock-stat-value green-val">247</span>
+                                </div>
+                                <div class="mock-stat-card">
+                                    <span class="mock-stat-label">Apps Activas</span>
+                                    <span class="mock-stat-value green-val">12</span>
+                                </div>
+                            </div>
+                            <div class="mock-chart">
+                                <div class="chart-label">Rendimiento de Red (últimas 24h)</div>
+                                <div class="chart-bars">
+                                    <div class="chart-bar" style="height: 60%"></div>
+                                    <div class="chart-bar" style="height: 80%"></div>
+                                    <div class="chart-bar" style="height: 70%"></div>
+                                    <div class="chart-bar" style="height: 90%"></div>
+                                    <div class="chart-bar active-bar" style="height: 95%"></div>
+                                    <div class="chart-bar" style="height: 85%"></div>
+                                    <div class="chart-bar" style="height: 75%"></div>
+                                    <div class="chart-bar" style="height: 88%"></div>
+                                    <div class="chart-bar" style="height: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="mock-activity">
+                                <div class="activity-item">
+                                    <span class="activity-dot"></span>
+                                    <span>Flujo automatizado n8n #247 completado</span>
+                                    <span class="activity-time">ahora</span>
+                                </div>
+                                <div class="activity-item">
+                                    <span class="activity-dot"></span>
+                                    <span>Deploy exitoso en producción</span>
+                                    <span class="activity-time">2m</span>
+                                </div>
+                                <div class="activity-item">
+                                    <span class="activity-dot warning"></span>
+                                    <span>Nodo #12 optimizado automáticamente</span>
+                                    <span class="activity-time">5m</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         NOSOTROS
+    ============================================================ -->
+    <section class="about-section" id="nosotros">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual" id="about-visual">
+                    <div class="about-main-circle">
+                        <img src="images/logo.png" alt="Simecab" class="about-logo-img">
+                        <div class="about-ring ring-1"></div>
+                        <div class="about-ring ring-2"></div>
+                        <div class="about-ring ring-3"></div>
+                    </div>
+                    <div class="about-stat-float stat-left">
+                        <span class="astat-num">2014</span>
+                        <span class="astat-label">Fundada</span>
+                    </div>
+                    <div class="about-stat-float stat-right">
+                        <span class="astat-num">150+</span>
+                        <span class="astat-label">Clientes</span>
+                    </div>
+                </div>
+
+                <div class="about-content reveal-item" id="about-content">
+                    <div class="section-badge">🏢 Quiénes Somos</div>
+                    <h2 class="section-title" style="font-size: clamp(2rem, 3.5vw, 3rem);">
+                        Más de una década<br>
+                        <span class="gradient-text">evolucionando la tecnología</span>
+                    </h2>
+                    <p
+                        style="color: var(--text-tertiary); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                        Simecab Evolución Tecnológica nació con una misión clara: democratizar el acceso a tecnología de
+                        clase mundial para empresas de todos los tamaños.
+                    </p>
+                    <p
+                        style="color: var(--text-tertiary); font-size: 1.05rem; line-height: 1.8; margin-bottom: 2.5rem;">
+                        Somos un equipo multidisciplinario de ingenieros, desarrolladores y especialistas en
+                        telecomunicaciones que trabajamos bajo una sola premisa: <strong
+                            style="color: var(--primary-400)">tu éxito es nuestro éxito.</strong>
+                    </p>
+
+                    <div class="about-values">
+                        <div class="value-item">
+                            <span class="value-icon">🎯</span>
+                            <div>
+                                <strong>Orientados a Resultados</strong>
+                                <p>KPIs claros y medibles desde el primer día.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">🔬</span>
+                            <div>
+                                <strong>Innovación Constante</strong>
+                                <p>Adoptamos las últimas tecnologías para mantenerte adelante.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">🤝</span>
+                            <div>
+                                <strong>Alianza Estratégica</strong>
+                                <p>No somos un proveedor, somos tu socio tecnológico a largo plazo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         WHITE SECTION: TESTIMONIOS
+    ============================================================ -->
+    <section class="testimonials-section white-section" id="testimonios">
+        <div class="container">
+            <div class="section-header dark-header">
+                <div class="section-badge-dark">⭐ Testimonios</div>
+                <h2 class="dark-title" style="font-size: clamp(2rem, 4vw, 3rem);">Lo que dicen<br><span
+                        class="gradient-text-green">nuestros clientes</span></h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card" id="test-1">
+                    <div class="test-stars">★★★★★</div>
+                    <p class="test-quote">"Simecab transformó completamente nuestra infraestructura de red. Pasamos de
+                        constantes caídas a un uptime del 99.8%. El ROI fue visible en menos de 3 meses."</p>
+                    <div class="test-author">
+                        <div class="test-avatar">CR</div>
+                        <div>
+                            <strong>Carlos Rodríguez</strong>
+                            <span>CTO — Grupo Industrial Andino</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card test-featured" id="test-2">
+                    <div class="test-stars">★★★★★</div>
+                    <p class="test-quote">"La automatización de nuestros procesos con flujos de n8n redujo el tiempo de
+                        ciclo en un 65%. El equipo de Simecab entendió nuestro negocio desde el primer día."</p>
+                    <div class="test-author">
+                        <div class="test-avatar">ML</div>
+                        <div>
+                            <strong>María Leal</strong>
+                            <span>Gerente de Operaciones — TechVen Corp</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" id="test-3">
+                    <div class="test-stars">★★★★★</div>
+                    <p class="test-quote">"Desarrollaron nuestro sistema de gestión a medida en tiempo récord. Robusto,
+                        escalable y exactamente lo que necesitábamos. El soporte post-entrega es excepcional."</p>
+                    <div class="test-author">
+                        <div class="test-avatar">JM</div>
+                        <div>
+                            <strong>José Martínez</strong>
+                            <span>Director de TI — Distribuidora Nacional</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Row -->
+            <div class="stats-row">
+                <div class="stat-box" id="stat-1">
+                    <span class="stat-num counter-white" data-target="150">0</span><span class="stat-suf">+</span>
+                    <span class="stat-lbl">Proyectos completados</span>
+                </div>
+                <div class="stat-box" id="stat-2">
+                    <span class="stat-num counter-white" data-target="98">0</span><span class="stat-suf">%</span>
+                    <span class="stat-lbl">Tasa de satisfacción</span>
+                </div>
+                <div class="stat-box" id="stat-3">
+                    <span class="stat-num counter-white" data-target="10">0</span><span class="stat-suf">+</span>
+                    <span class="stat-lbl">Años de experiencia</span>
+                </div>
+                <div class="stat-box" id="stat-4">
+                    <span class="stat-num counter-white" data-target="24">0</span><span class="stat-suf">/7</span>
+                    <span class="stat-lbl">Soporte técnico</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         CTA FINAL
+    ============================================================ -->
+    <section class="cta-section" id="cta-final">
+        <div class="cta-glow"></div>
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-badge">🚀 ¿Listo para evolucionar?</div>
+                <h2 class="cta-title">Tu transformación<br><span class="gradient-text">comienza hoy</span></h2>
+                <p class="cta-subtitle">
+                    Agenda una consulta gratuita y descubre cómo Simecab puede
+                    llevar tu empresa al siguiente nivel tecnológico.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#contacto" class="btn-primary btn-xl pulse-glow" id="cta-main-btn">
+                        Agenda tu Consulta Gratis
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                    <a href="tel:+581389348" class="btn-outline btn-xl" id="cta-phone-btn">
+                        📞 Llamar Ahora
+                    </a>
+                </div>
+                <p class="cta-note">✓ Sin costo · ✓ Sin compromiso · ✓ Respuesta en menos de 24h</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT SECTION
+    ============================================================ -->
+    <section class="contact-section" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">📬 Contacto</div>
+                <h2 class="section-title">Hablemos de <span class="gradient-text">tu proyecto</span></h2>
+                <p class="section-subtitle">Cuéntanos tu desafío y te diseñamos una solución a medida sin ningún costo
+                    inicial.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info" id="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <strong>Email</strong>
+                            <a href="mailto:info@simecab.com">info@simecab.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <strong>WhatsApp / Teléfono</strong>
+                            <a href="https://wa.me/581389348" target="_blank">+58 138-9348</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🌍</div>
+                        <div>
+                            <strong>Ubicación</strong>
+                            <span>Venezuela · Servicio Regional</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div>
+                            <strong>Horario</strong>
+                            <span>Lun–Vie 8am–6pm · Soporte 24/7</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="#" class="social-btn" id="social-linkedin" aria-label="LinkedIn">in</a>
+                        <a href="#" class="social-btn" id="social-instagram" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-btn" id="social-twitter" aria-label="Twitter">𝕏</a>
+                        <a href="https://wa.me/581389348" class="social-btn whatsapp-btn" id="social-whatsapp"
+                            aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+
+                <form class="contact-form glass-card" id="contactForm" novalidate>
+                    <!-- Configuraciones Formsubmit -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="Nuevo Lead desde Landing Page - Simecab">
+                    <input type="hidden" name="_template" value="box">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo *</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="empresa">Empresa</label>
+                            <input type="text" id="empresa" name="empresa" placeholder="Tu empresa">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+58 138-9348">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="servicio">Servicio de interés *</label>
+                        <select id="servicio" name="servicio" required>
+                            <option value="">Selecciona un servicio</option>
+                            <option value="telco">Telecomunicaciones e Infraestructura</option>
+                            <option value="automation">Automatización de Procesos</option>
+                            <option value="software">Desarrollo de Software a Medida</option>
+                            <option value="iot">IoT & Conectividad Inteligente</option>
+                            <option value="cloud">Cloud & DevOps</option>
+                            <option value="consulting">Consultoría Tecnológica</option>
+                            <option value="combo">Solución Integral (varios servicios)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Cuéntanos tu proyecto *</label>
+                        <textarea id="mensaje" name="mensaje" rows="4"
+                            placeholder="Describe brevemente tu desafío o necesidad tecnológica..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full" id="submit-btn">
+                        Enviar Mensaje
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z" />
+                        </svg>
+                    </button>
+                    <p class="form-note">Respondemos en menos de 24 horas hábiles.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         FOOTER
+    ============================================================ -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <img src="images/logo.png" alt="Simecab" class="footer-logo-img">
+                            <span>Simecab</span>
+                        </div>
+                        <p>Conectamos tu mundo: expertos en telecomunicaciones, automatización inteligente y desarrollo
+                            de aplicaciones de vanguardia.</p>
+                        <div class="footer-social">
+                            <a href="#" id="footer-linkedin" aria-label="LinkedIn">in</a>
+                            <a href="#" id="footer-instagram" aria-label="Instagram">📷</a>
+                            <a href="#" id="footer-twitter" aria-label="Twitter">𝕏</a>
+                            <a href="https://wa.me/581389348" id="footer-whatsapp" aria-label="WhatsApp">💬</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Servicios</h4>
+                        <ul>
+                            <li><a href="#servicios">Telecomunicaciones</a></li>
+                            <li><a href="#servicios">Automatización</a></li>
+                            <li><a href="#servicios">Software a Medida</a></li>
+                            <li><a href="#servicios">IoT & Conectividad</a></li>
+                            <li><a href="#servicios">Cloud & DevOps</a></li>
+                            <li><a href="#servicios">Consultoría Tech</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#nosotros">Quiénes Somos</a></li>
+                            <li><a href="#testimonios">Clientes</a></li>
+                            <li><a href="#soluciones">Nuestro Diferencial</a></li>
+                            <li><a href="#contacto">Trabaja con Nosotros</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Contacto</h4>
+                        <ul>
+                            <li><a href="mailto:info@simecab.com">info@simecab.com</a></li>
+                            <li><a href="tel:+581389348">+58 138-9348</a></li>
+                            <li><span>Venezuela · Servicio Regional</span></li>
+                            <li><a href="https://wa.me/581389348">WhatsApp Directo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 Simecab Evolución Tecnológica. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/581389348" class="floating-whatsapp" target="_blank" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor">
+            <path
+                d="M16.035 2.1c-7.669 0-13.885 6.216-13.885 13.884 0 2.454.64 4.845 1.85 6.953L2 29.983l7.214-1.892c2.046 1.096 4.35 1.674 6.812 1.674 7.668 0 13.884-6.216 13.884-13.885 0-7.668-6.216-13.884-13.884-13.884zm7.641 19.866c-.32.906-1.85 1.748-2.6 1.874-.707.118-1.614.288-5.322-1.251-4.48-1.859-7.382-6.427-7.604-6.723-.222-.296-1.815-2.42-1.815-4.618 0-2.198 1.144-3.275 1.551-3.708.406-.433.886-.541 1.182-.541.296 0 .592.004.851.016.27.012.632-.108.99.753.37.89 1.258 3.078 1.368 3.3.111.222.185.481.037.777-.148.296-.222.481-.444.74-.222.259-.462.556-.666.777-.222.241-.462.493-.204.937.258.444 1.145 1.892 2.457 3.061 1.696 1.511 3.125 1.976 3.568 2.198.444.222.703.185.961-.111.258-.296 1.109-1.294 1.405-1.738.296-.444.592-.37.999-.222.407.148 2.589 1.221 3.033 1.442.444.222.74.333.848.518.11.185.11 1.072-.21 1.978z" />
+        </svg>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
